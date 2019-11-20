@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5501/challenge-tests.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Challenge Exercises Introduction to JavaScript - Mocha Tests</title>
+    <link rel="stylesheet" href="./Challenge Exercises Introduction to JavaScript - Mocha Tests_files/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"><ul id="mocha-stats"><li class="progress"><canvas width="40" height="40"></canvas></li><li class="passes"><a href="javascript:void(0);">passes:</a> <em>5</em></li><li class="failures"><a href="javascript:void(0);">failures:</a> <em>2</em></li><li class="duration">duration: <em>0.43</em>s</li></ul><ul id="mocha-report"><li class="suite"><h1><a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises">Challenge Exercises</a></h1><ul><li class="suite"><h1><a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20IQ%20Test">IQ Test</a></h1><ul><li class="test pass fast"><h2>should be 3 when third number is only one not even<span class="duration">4ms</span> <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20IQ%20Test%20should%20be%203%20when%20third%20number%20is%20only%20one%20not%20even" class="replay">‣</a></h2><pre style="display: none;"><code>iqTest(<span class="string">'<span class="number">2</span> <span class="number">4</span> <span class="number">7</span> <span class="number">8</span> <span class="number">10</span>'</span>).should.equal(<span class="number">3</span>);</code></pre></li><li class="test pass fast"><h2>should be 2 when second number is only one even<span class="duration">1ms</span> <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20IQ%20Test%20should%20be%202%20when%20second%20number%20is%20only%20one%20even" class="replay">‣</a></h2><pre style="display: none;"><code>iqTest(<span class="string">'<span class="number">1</span> <span class="number">2</span> <span class="number">1</span> <span class="number">1</span>'</span>).should.equal(<span class="number">2</span>);</code></pre></li><li class="test pass fast"><h2>should be 0 when no numbers are given<span class="duration">0ms</span> <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20IQ%20Test%20should%20be%200%20when%20no%20numbers%20are%20given" class="replay">‣</a></h2><pre style="display: none;"><code>iqTest(<span class="string">''</span>).should.equal(<span class="number">0</span>);</code></pre></li><li class="test pass fast"><h2>should be 0 when all numbers are even<span class="duration">1ms</span> <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20IQ%20Test%20should%20be%200%20when%20all%20numbers%20are%20even" class="replay">‣</a></h2><pre style="display: none;"><code>iqTest(<span class="string">'<span class="number">2</span> <span class="number">2</span> <span class="number">4</span> <span class="number">6</span>'</span>).should.equal(<span class="number">0</span>);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20Title%20Case">Title Case</a></h1><ul><li class="test fail"><h2>should properly titlify even if extra words are given <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20Title%20Case%20should%20properly%20titlify%20even%20if%20extra%20words%20are%20given" class="replay">‣</a></h2><pre class="error">ReferenceError: strArr is not defined
+    at titleCase (challenge-exercises.js:77:17)
+    at Context.&lt;anonymous&gt; (challenge-tests.js:21:7)</pre><pre style="display: none;"><code>titleCase(<span class="string">'a clash of KINGS'</span>, <span class="string">'a an the of'</span>).should.equal(<span class="string">'A Clash of Kings'</span>);</code></pre></li><li class="test fail"><h2>should properly titlify even if given words are different case <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20Title%20Case%20should%20properly%20titlify%20even%20if%20given%20words%20are%20different%20case" class="replay">‣</a></h2><pre class="error">ReferenceError: strArr is not defined
+    at titleCase (challenge-exercises.js:77:17)
+    at Context.&lt;anonymous&gt; (challenge-tests.js:24:7)</pre><pre style="display: none;"><code>titleCase(<span class="string">'THE WIND IN THE WILLOWS'</span>, <span class="string">'The In'</span>).should.equal(<span class="string">'The Wind in the Willows'</span>);</code></pre></li><li class="test pass fast"><h2>should properly titlify even if no non titled words are given<span class="duration">3ms</span> <a href="http://127.0.0.1:5501/challenge-tests.html?grep=Challenge%20Exercises%20Title%20Case%20should%20properly%20titlify%20even%20if%20no%20non%20titled%20words%20are%20given" class="replay">‣</a></h2><pre style="display: none;"><code>titleCase(<span class="string">'the quick brown fox'</span>).should.equal(<span class="string">'The Quick Brown Fox'</span>);</code></pre></li></ul></li></ul></li></ul></div>
+    <div id="fixture"></div>
+    <script src="./Challenge Exercises Introduction to JavaScript - Mocha Tests_files/mocha.js"></script>
+    <script src="./Challenge Exercises Introduction to JavaScript - Mocha Tests_files/chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+
+    <!-- load code you want to test here -->
+    <script src="./Challenge Exercises Introduction to JavaScript - Mocha Tests_files/challenge-exercises.js"></script>
+
+    <!-- load your test files here -->
+    <script src="./Challenge Exercises Introduction to JavaScript - Mocha Tests_files/challenge-tests.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

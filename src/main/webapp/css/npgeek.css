@@ -1,0 +1,564 @@
+﻿body {
+	/* gradient background */
+	background-image: linear-gradient(to bottom, #6699FF, #008e00, #006000, #020);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+	display: grid;
+	grid-row-gap: 50px;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-areas: 	'. header .'
+							'. nav    .'
+							'. main   .'
+							'. footer .';
+	grid-row-gap: 25px;
+	
+}
+
+header {
+	grid-area: header;
+	margin-top: 25px;
+}
+
+
+header img {
+	max-height: 125px;
+	max-width: 100%;
+	padding-right: 20px;
+}
+
+.logo:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14), 0 17px 50px 0 rgba(0,0,0,0.09);
+}
+
+nav {
+	grid-area: nav;
+}
+
+nav h2 {
+	color: #FFFFFF;
+}
+
+nav p {
+	color: #FFFFFF;
+	/*font-size: 12pt;*/
+	font-style: italic;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+	padding-bottom: 4px;
+}
+
+li a {
+	color: #0D118B;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+nav ul {
+	width: 600px;
+	max-width: 100%;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	background-color: white;
+	opacity:0.6;
+	border-radius: 3px;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+	width: 200px;
+	max-width: 30%;
+	padding: 2px;
+	line-height: 30px;
+	font-size: 1.2rem;
+	word-wrap: break-word;
+}
+
+nav ul li:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+nav:after {
+	clear: both;
+}
+
+.change-units ul li {
+	display: block;
+	float: left;
+	background-color: rgba(0,0,255,0.3);
+	border-radius: 3px;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+	width: 300px;
+	max-width: 47%;
+	padding: 4px;
+	font-size: 1rem;
+	word-wrap: break-word;
+}
+
+.change-units ul li:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.change-units:after {
+	clear: both;
+}
+
+.change-units h3 {
+	padding:0;
+	margin: 0;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+section h1 {
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	/* padding-left: 120px; */
+}
+
+section h2 {
+	color: #FFFFFF;
+	font-size: 1.5rem;
+}
+
+section p {
+	color: #FFFFFF;
+	/*font-size: 14pt;*/
+	width: 90%;
+	margin: 25px;
+	text-align: left;
+}
+
+section img {
+	width: 95%;
+	max-width: 500px;
+	min-width: 100px;
+	height: 250px;
+	padding: 5px;
+	border-color: rgba(20,20,255,0.7);
+	border-width: 4px;
+	border-style: solid;
+	object-fit: cover;
+}
+
+section a img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 100, 150, 0.8), 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#main-content {
+	grid-area: main;
+	background-color: white;
+	background-image: linear-gradient(to bottom, #FFF, #AAA);
+	opacity: 0.7;
+	color: #321a10;
+	border-radius: 6px;
+	width: 100%;
+	min-height: 400px;
+	padding-top: 10px;
+}
+
+#main-content h2 {
+	padding: 0px;
+	margin: 0;
+	color: #321a10;
+}
+
+#main-content p {
+	color: #321a10;
+}
+
+form div {
+	padding: 10px 0px;
+}
+
+form div label {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	color: black;
+}
+
+
+
+.centered {
+	text-align: center;
+	display: block;
+}
+
+
+.copyright {
+	grid-area: footer;
+	color: white;
+	text-align: center;
+}
+
+.error {
+	color: white;
+	background-color: red;
+	opacity: 0.7;
+}
+
+div.individual-park {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 14px;
+	margin-right: 30px;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+div.basic-park-info {
+	display: flex;
+	margin-top: 10px;
+}
+
+div.basic-park-info p{
+	display: block;
+	max-width: 800px;
+	width: 90%;
+	padding: 0;
+	margin: 0;
+	padding-left: 40px;
+	padding-right: 10px;
+	word-wrap: break-word;
+	
+}
+
+.individual-park {
+	margin: 15px;
+	padding:15px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.individual-park:last-of-type {
+	border-bottom: 0px;
+}
+
+#park-details {
+	display: grid;
+	margin: 40px;
+	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+	grid-template-areas: 'title 	title 	title 	title 	.	  	units	units 	units'
+						 'img		img		img		img		descr	descr	descr	descr'
+						 'img		img 	img 	img		table	table	table	table'
+						 '.			weath	weath	weath	weath	weath	weath	.';
+	grid-row-gap: 25px;
+	grid-column-gap: 20px;
+}
+
+#park-details p {
+	padding: 0;
+	margin: 0;
+}
+
+#park-details .title {
+	grid-area: title;
+}
+
+#park-details .change-units {
+	grid-area: units;
+}
+
+#park-details .img-quote {
+	grid-area: img;
+	content-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.park-img {
+	margin: 0 auto;
+	justify-content: center;
+	content-align: center;
+	text-align: center;
+}
+
+#park-details .park-img img {
+	box-shadow: 0 0 2px 1px rgba(0, 100, 150, 0.8), 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);	
+}
+
+#park-details .description {
+	grid-area: descr;
+}
+
+#park-details .table {
+	grid-area: table;
+}
+
+#park-details .weather-forecast {
+	grid-area: weath;
+}
+
+#img-box {
+	margin: 0 auto;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	content-align: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#quote {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#quote-source {
+	font-weight: bold;
+	text-align: center;		
+}
+
+.individual-forecast {
+	width: 14%;
+	display: inline-block;
+	content-align: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.individual-forecast:first-child {
+	width: 40%;
+}
+
+.individual-forecast img {
+	border: 0;
+	width: 90%;
+	max-height: 50%;
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+	border-radius: 8px;
+	
+	
+}
+
+.individual-forecast:first-child img {
+	max-height: 100%;
+	color: black;
+	
+}
+
+.day-of-week {
+	text-transform: capitalize;
+}
+
+.weather-forecast {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+#park-details p {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#survey {
+	display: grid;
+	grid-template-columns: 3fr 1fr 2fr 1fr 3fr;
+	grid-template-areas: 'title 	title 		title		title 	title	'
+						 '. 		park 		park 		. 		parkE	'
+						 '.			email		email		.		emailE 	'
+						 '.			state 		state		.		stateE	'
+						 '.			act			act			.		actE	'
+						 '.			.			submit		.		.		';
+						 
+	grid-row-gap: 10px;
+	grid-column-gap: 20px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#fav-park{
+	grid-area: park;
+}
+#fav-email{
+	grid-area: email;
+}
+#fav-state{
+	grid-area: state;
+}
+#fav-activity{
+	grid-area: act;
+}
+#fav-submit{
+	grid-area:	submit;
+	text-align: center;
+}
+#park-error{
+	grid-area: parkE;
+}
+#email-error{
+	grid-area: emailE;
+}
+#state-error{
+	grid-area: stateE;
+}
+#activity-error{
+	grid-area: actE;
+}
+
+#survey-title {
+	grid-area: title;
+	text-align: center;
+}
+
+
+
+
+
+
+
+.radio-question {
+	display: flex;
+}
+ .radio {
+ 	padding: 0;
+ }
+
+
+.favored-parks{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.numberOfLikes{
+	margin-left: 20px;
+}
+
+
+.form-group label {
+  padding: 0 5px;
+  text-align: right;
+  flex-grow: 1;
+  flex-basis: 100px;
+}
+
+.form-group input {
+  flex-grow: 2;
+  flex-basis: 200px;
+}
+
+.title h2 {
+	font-size: 2rem;
+}
+
+.today h4 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.today {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+
+.favored-parks {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 20px;
+	padding: 30px;
+	align-items: flex-start;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.favored-parks:last-child {
+	border-bottom: 0;
+}
+
+.survey-results {
+	padding-left: 20px;
+}
+
+.weather-details {
+	content-align: center;
+	text-align: center;
+}
+.weather-details p {
+	content-align: center;
+	text-align: center;
+}
+
+.advisories {
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.advisories > div {
+	display: block;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+.advisories > div p {
+	font-weight: bold;
+}
+
+.table table {
+	padding: 0 10%;
+	width: 100%;
+}
+
+.table table caption {
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+
+.table table tr th {
+	text-align: left;
+}
+
+.table table tr td {
+	text-align: right;
+	display: block;
+	padding: 3px 0 0 0;
+	margin:0;
+}
+
+.table table tr:first-child td {
+	padding: 7px 0 0 0;
+}
+
+
+p.low-temp {
+	color: #0000FF;
+}
+
+p.hi-temp {
+	color: #FF0000;
+}
+
